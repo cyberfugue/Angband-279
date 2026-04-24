@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angband 2.7.9v6</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #8b5cf6;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(circle at top, #1b2030, var(--bg) 45%);
+        color: var(--text);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        width: min(760px, calc(100% - 2rem));
+        background: color-mix(in srgb, var(--card) 92%, black 8%);
+        border: 1px solid #2a2f3c;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 16px 36px rgb(0 0 0 / 40%);
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        color: #fff;
+        font-size: clamp(1.4rem, 3vw, 2.2rem);
+      }
+      p { color: var(--muted); line-height: 1.6; }
+      code {
+        color: #c4b5fd;
+        background: #111827;
+        border: 1px solid #374151;
+        border-radius: 6px;
+        padding: 0.1rem 0.35rem;
+      }
+      .actions {
+        margin-top: 1.2rem;
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #5b21b6;
+        background: linear-gradient(135deg, #6d28d9, #4c1d95);
+        padding: 0.65rem 0.95rem;
+        border-radius: 10px;
+      }
+      a.secondary {
+        background: transparent;
+        border-color: #374151;
+        color: var(--text);
+      }
+      ul { color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Angband-279</h1>
+      <p>
+        This repository contains the original <strong>Angband 2.7.9v6</strong> source and a Swift terminal prototype.
+        Vercel now serves this lightweight project page.
+      </p>
+
+      <ul>
+        <li>Run locally with <code>swift run angband279-swift</code></li>
+        <li>Original extracted source is in <code>/angband-2.7.9v6</code></li>
+        <li>Archive is <code>/angband-2.7.9v6.tar.gz</code></li>
+      </ul>
+
+      <div class="actions">
+        <a href="https://github.com">Open Repository</a>
+        <a class="secondary" href="./README.md">Read README</a>
+      </div>
+    </main>
+  </body>
+</html>
