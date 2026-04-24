@@ -451,6 +451,14 @@ s16b get_mon_num(int level)
         /* Access the actual race */
         r_ptr = &r_info[r_idx];
 
+        /* Remove non-unique angel/demon style mobs from selection */
+        if (!(r_ptr->flags1 & RF1_UNIQUE) &&
+            ((r_ptr->r_char == 'A') || (r_ptr->r_char == 'U') ||
+             (r_ptr->r_char == 'u') || (r_ptr->flags3 & RF3_DEMON)))
+        {
+            continue;
+        }
+
 
         /* Hack -- "unique" monsters must be "unique" */
         if ((r_ptr->flags1 & RF1_UNIQUE) &&
@@ -1927,5 +1935,3 @@ void update_smart_learn(int m_idx, int what)
 #endif /* DRS_SMART_OPTIONS */
 
 }
-
-
