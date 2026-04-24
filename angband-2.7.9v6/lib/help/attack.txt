@@ -184,9 +184,9 @@ Weapon of Slay Giant
      A Slay Giant weapon does treble damage against anything of
      giant-humanoidal form.
 
-Weapon of Slay Demon
-     A Slay Demon weapon does treble damage against anything of Hellish
-     nature such as the Minor and Major Demons.
+Weapon of Slay Fiend
+     A Slay Fiend weapon does treble damage against anything of Hellish
+     nature such as the Minor and Major Fiends.
 
 Whips of Fire
      These are one of the balrogs' favorite weapons, delivering heat
@@ -335,4 +335,3 @@ quality metals they contain.
 
 
 Artifact Armours -- see "rumors.hlp"
-
